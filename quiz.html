@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="sv" dir="ltr">
+
+<!--Head settings-->
+
+<head>
+    <title>Högskolans Lärplattform - Quiz</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/quiz.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--Site wrapper for CSS purposes-->
+    <div class="site-wrapper">
+        <div class="header-wrapper">
+            <header class="site-header">
+                <a href="courseinfo.html">Otaku Lärplattform</a>
+            </header>
+        </div>
+
+        <!--Navigation
+        class for the active button to make background white-->
+        <nav>
+            <ul>
+                <li><a href="courseinfo.html">Kursinformation</a></li>
+                <li><a href="quiz.html" class="button-bg">Quiz</a></li>
+                <li><a href="teachers.html">Lärare</a></li>
+
+            </ul>
+        </nav>
+
+        <!--Wrapper for the quiz. The div for the questions are created in the HTML. All information, data and buttons are created dynamically with the JS script. Div warppers for the score buttons are created in the HTML as well. -->
+
+        <div class="quiz-wrapper">
+            <h2>Awesome Quiz</h2>
+            <div id="quiz0" class="quiz-padding"></div>
+            <div id="quiz1" class="quiz-padding"></div>
+            <div id="quiz2" class="quiz-padding"></div>
+            <div id="quiz3" class="quiz-padding"></div>
+            <div id="quiz4" class="quiz-padding"></div>
+            <div id="quiz5" class="quiz-padding"></div>
+            <div id="quiz6" class="quiz-padding"></div>
+            <div id="quiz7" class="quiz-padding"></div>
+            <div id="quiz8" class="quiz-padding"></div>
+            <div id="quiz9" class="quiz-padding"></div>
+            <div class="score-button"></div>
+            <div class="show-score"></div>
+        </div>
+
+        <footer>
+            <p class="p-footer">En webbsida av Grupp D7</p>
+        </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="js/quiz.js"></script>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="sv" dir="ltr">
+
+<!--Head settings-->
+
+<head>
+    <title>Högskolans Lärplattform - Kursinformation</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/courses.css">
+    <link rel="stylesheet" type="text/css" href="css/hamburgeroverlay.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--Site wrapper for CSS purposes-->
+    <div class="site-wrapper">
+
+        <div class="header-wrapper">
+            <header class="site-header">
+                <a href="courseinfo.html">Otaku Lärplattform</a>
+            </header>
+        </div>
+
+        <!--Navigation
+        class for the active button to make background white-->
+       
+        <nav class="hamburger-nav">
+         <div id="menu-bar">
+            <div id="menu" onclick="openNav()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+        </div>
+    </nav>
+
+        <nav class="site-nav">
+            <ul>
+                <li class="site-nav-button"><a href="courseinfo.html">Kursinformation</a></li>
+                <li class="site-nav-button"><a href="quiz.html">Quiz</a></li>
+                <li class="site-nav-button"><a href="teachers.html">Lärare</a></li>
+            </ul> 
+        </nav>
+       
+        <nav class="hamburger-nav-overlay">
+        <div id="site-nav-mobile" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+            <div class="overlay-content">
+                <a href="courseinfo.html">Kursinformation</a>
+                <a href="quiz.html">Quiz</a>
+                <a href="teachers.html">Lärare</a>
+            </div>
+        </div>
+    </nav>
+
+        <div class="user"></div>
+        <!--Wrapper for the table. The table and headers are created in the HTML and the dynamic info is added with the JS script.-->
+        <div class="courses">
+            <h2>Kursinformation</h2>
+            <table>
+                <tr>
+                    <th class="th-header">Skola</th>
+                    <th class="th-header">Kurs-ID</th>
+                    <th class="th-header">Kursnamn</th>
+                    <th class="th-header">Poäng</th>
+                    <th class="th-header">Start vecka</th>
+                    <th class="th-header">Slutar vecka</th>
+                </tr>
+            </table>
+        </div>
+
+        <footer>En webbsida av Grupp D7</footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="js/courses.js"></script>
+        <script src="js/menuscript.js"></script>
+    </div>
+</body>
+
+</html>

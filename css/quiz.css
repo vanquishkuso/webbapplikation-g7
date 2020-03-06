@@ -1,0 +1,58 @@
+/* Add grid area for the quiz */
+.quiz-wrapper {
+  grid-area: c !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Quiz header settings */
+.quiz-wrapper h2 {
+  text-align: center;
+  font-size: 2em;
+}
+
+/* Quiz settings */
+.quiz-padding {
+  background-color: #2ea5ff;
+  color: #fff;
+  font-size: 1.5em;
+  padding-top: 2em;
+  text-align: center;
+  border: 4px solid #2ea5ff;
+  border-radius: 10px;
+  padding: 1em;
+  margin: 2em;
+}
+
+/* Color class for score button */
+.score-color {
+  color: green;
+}
+
+/* Color class correct button in question */
+.score-bg-color {
+  border: 2px rgb(37, 189, 37) !important;
+  opacity: 1 !important;
+}
+
+/* Color class for wrong points */
+.score-color-red {
+  color: red !important;
+}
+
+/* Score buttons settings */
+.score-button,
+.show-score {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+/* Make the different paragraphs get on same line */
+.p-score {
+  display: inline;
+}
+
+/* Footer settings */
+footer {
+  position: relative !important;
+}

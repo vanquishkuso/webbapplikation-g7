@@ -1,0 +1,119 @@
+/* Add grid area for courses information */
+.teachers-wrapper {
+  grid-area: c !important;
+  text-align: center;
+  max-width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Teachers header settings */
+.teachers-wrapper h2 {
+  font-size: 2em;
+}
+
+/* Teachers img settings to make the image a circle and cool effects */
+.img-wrapper img {
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  filter: gray;
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -webkit-backface-visibility: hidden;
+}
+
+/* Teachers hover effects */
+.img-wrapper img:hover {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+  -moz-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+}
+
+
+/* Start teacher box settings */
+.teacher0 {
+  display: inline-block;
+  border-radius: 5px;
+  margin: 2em;
+  padding: 1.5em;
+}
+
+.teacher1 {
+  display: inline-block;
+  border-radius: 5px;
+  margin: 2em;
+  padding: 1.5em;
+}
+
+.teacher2 {
+  display: inline-block;
+  border-radius: 5px;
+  margin: 2em;
+  padding: 1.5em;
+}
+
+.teacher3 {
+  display: inline-block;
+  border-radius: 5px;
+  margin: 2em;
+  padding: 1.5em;
+}
+
+.teacher4 {
+  display: inline-block;
+  border-radius: 5px;
+  margin: 2em;
+  padding: 1.5em;
+}
+
+.teacher5 {
+  display: inline-block;
+  border-radius: 5px;
+  margin: 2em;
+  padding: 1.5em;
+}
+
+.teacher6 {
+  display: inline-block;
+  border-radius: 5px;
+  margin: 2em;
+  padding: 1.5em;
+}
+
+.teacher7 {
+  display: inline-block;
+  border-radius: 5px;
+  margin: 2em;
+  padding: 1.5em;
+}
+
+.teacher8 {
+  display: inline-block;
+  border-radius: 5px;
+  margin: 2em;
+  padding: 1.5em;
+}
+
+.teacher9 {
+  display: inline-block;
+  border-radius: 5px;
+  margin: 2em;
+  padding: 1.5em;
+}
+/* End teacher box settings */
+
+/* Footer settings */
+footer {
+  position: relative;
+}
+
+@media only screen and (max-width: 1024px) {
+  footer {
+    position: relative;
+  }
+}

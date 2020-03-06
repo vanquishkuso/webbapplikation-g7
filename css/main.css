@@ -1,0 +1,251 @@
+body {
+  font-family: "Montserrat", sans-serif !important;
+  min-height: 100%;
+}
+
+/* Grid start */
+.site-wrapper {
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  grid-gap: 0px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px auto auto;
+  grid-template-areas:
+    "h n l"
+    "c c c"
+    "f f f";
+}
+/* Grid end */
+
+.header-wrapper {
+  grid-area: h;
+  color: white;
+  background: #2ea5ff;
+  font-size: 2em;
+  padding: 0.7em;
+}
+
+header a {
+  font-weight: bold;
+}
+
+/* Start settings for links */
+a:link {
+  text-decoration: none;
+}
+
+a {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: rgb(10, 94, 158);
+}
+
+a:active {
+  color: rgb(28, 41, 99);
+}
+/* End settings for links */
+
+/* Main content header settings */
+h2 {
+  font-size: 2.5em !important;
+  color: #2ea5ff;
+}
+
+/* Start Navigation settings */
+.nav-wrapper {
+  background-color: #2ea5ff;
+}
+
+/* Start active nav button settings */
+.button-bg {
+  background-color: white;
+  border-radius: 5px;
+  padding: 0.5em 1em 0.5em 1em;
+  color: #2ea5ff;
+}
+
+.button-bg:visited {
+  color: #2ea5ff;
+}
+
+.button-bg:visited:hover {
+  color: rgb(10, 94, 158);
+}
+/* End active nav button settings */
+
+/* Start navigation settings */
+nav {
+  grid-area: n;
+  max-width: 100%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em 1em 0.5em 1em;
+  background-color: #2ea5ff;
+  text-align: center;
+  font-weight: 700;
+}
+
+nav ul li {
+  padding: 1em 1em 0.5em 1em;
+  font-size: 1.2em;
+  display: inline;
+}
+/* End Navigation settings */
+
+.user {
+  grid-area: l;
+  background-color: #2ea5ff;
+}
+
+/* Main content settings for the grid */
+.main-content {
+  grid-area: c;
+}
+
+.error-message {
+  position: relative;
+  top: 10vw;
+}
+.error-message > h1 {
+  font-size: 3em;
+}
+
+.error-message > h2 {
+  font-size: 1.2em !important;
+}
+
+.error-message {
+  text-align: center;
+}
+
+/* All paragraphs settings */
+p {
+  font-weight: bold;
+}
+
+/* Start Footer settings */
+footer {
+  grid-area: f;
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  background-color: #2ea5ff;
+  color: white;
+  padding-top: 2em;
+  font-weight: 600;
+}
+
+.p-footer {
+  margin-left: auto;
+  margin-right: auto;
+}
+/* End footer settings */
+
+/* Settings for mobile devices */
+@media only screen and (max-width: 1210px) {
+  .site-wrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 120px auto auto;
+    grid-template-areas:
+      "h h"
+      "n n"
+      "c c"
+      "f f";
+  }
+
+  nav {
+    padding: 0;
+  }
+
+  .nav ul li {
+    padding: 1em;
+    margin: 1em;
+  }
+
+  nav ul {
+    padding: 0;
+  }
+
+  .button-bg {
+    background-color: white;
+    border-radius: 5px;
+    padding: 0.5em 1em 0.5em 1em !important;
+    margin: 0 !important;
+  }
+
+  footer {
+    position: relative;
+    margin-top: 1em;
+  }
+
+  .header-wrapper {
+    max-width: 100%;
+    text-align: center;
+  }
+}
+
+/* Settings for the nav bar for smaller screens than mobile above */
+@media only screen and (max-width: 465px) {
+  .site-wrapper {
+    grid-template-rows: 100px 200px auto auto;
+  }
+
+  nav ul li {
+    padding: 0em;
+  }
+
+  li a {
+    display: block;
+    margin: 1em;
+  }
+  .button-bg {
+    background-color: #2ea5ff;
+    color: white;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .button-bg:visited {
+    color: white;
+  }
+}
+/* Button settings */
+button {
+  background-color: #fff;
+  border: 2px grey solid;
+  border-radius: 5px;
+  color: rgb(44, 44, 44);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  margin: 1em;
+}
+
+/* Start button pseudo-classes */
+button:active {
+  background-color: rgb(10, 94, 158);
+}
+
+button:enabled:hover {
+  background-color: rgb(226, 226, 226);
+}
+
+button:disabled,
+button:disabled:hover,
+button:disabled:focus,
+button:disabled:active {
+  opacity: 0.3;
+  background-color: rgb(226, 226, 226);
+}
+/* End button pseudo-classes */

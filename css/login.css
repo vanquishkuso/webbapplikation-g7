@@ -1,0 +1,77 @@
+/* Remove the categories if not logged in */
+nav ul li {
+  display: none;
+}
+
+/* Login box settings */
+#login-box {
+  background: #2ea5ff;
+  text-align: center;
+  grid-area: c;
+  font-size: 1.2em;
+}
+
+.site-wrapper {
+  display: grid;
+  /* min-width: 1280px; */
+  margin-left: auto;
+  margin-right: auto;
+  grid-gap: 0px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100px auto auto;
+  grid-template-areas:
+    "h h h n n"
+    "c c c c c"
+    "f f f f f";
+}
+
+/* Settings for mobile devices */
+@media only screen and (max-width: 1024px) {
+  .site-wrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 70px 70px auto auto;
+    grid-template-areas:
+      "h h"
+      "n n"
+      "c c"
+      "f f";
+  }
+}
+
+/* Login wrapper settings */
+#login-wrapper {
+  grid-area: c;
+  background: #2ea5ff;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 10vw;
+  padding: 2em;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+}
+
+/* Input settings */
+form label {
+  margin: 3em !important;
+}
+
+/* Input submit button settings */
+#submit-button {
+  background-color: #fff;
+  border: 2px grey solid;
+  border-radius: 5px;
+  color: #2ea5ff;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+}
+
+#submit-button:hover {
+  background-color: rgb(226, 226, 226);
+}
+
+.wrong-login {
+  color: rgb(230, 50, 50);
+}
